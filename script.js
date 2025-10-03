@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Counter animation for pricing
     const priceElement = document.querySelector('.new-price');
     if (priceElement) {
-        const finalPrice = 97;
+        const finalPrice = 397;
         let currentPrice = 0;
         const increment = finalPrice / 50;
         
