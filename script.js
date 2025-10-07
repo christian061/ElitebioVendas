@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const ctaButtons = document.querySelectorAll('.cta-button');
     ctaButtons.forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault();
-            
             // Add click animation
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
@@ -40,17 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Track click (you can integrate with analytics here)
             console.log('CTA clicked:', this.textContent);
             
-            // Special handling for CRIART CTA
-            if (this.id === 'criart-cta') {
-                setTimeout(() => {
-                    showCriartModal();
-                }, 200);
-            } else {
-                // Simulate redirect to payment page
-                setTimeout(() => {
-                    alert('Redirecionando para a página de pagamento...\n\nEm um site real, isso levaria você para o checkout.');
-                }, 200);
-            }
+            // Allow normal navigation to the href link
+            // No preventDefault() - let the browser navigate normally
         });
     });
 
@@ -81,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Counter animation for pricing
     const priceElement = document.querySelector('.new-price');
     if (priceElement) {
-        const finalPrice = 397;
+        const finalPrice = 289;
         let currentPrice = 0;
         const increment = finalPrice / 50;
         
