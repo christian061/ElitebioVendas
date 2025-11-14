@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Garantir que o efeito 3D funcione corretamente */
+        html, body {
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            min-height: 100vh;
+            perspective: 1000px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -18,562 +30,211 @@
         </header>
 
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="urgency-banner">
-                    <i class="fas fa-fire"></i>
-                    <span>🔥 ÚLTIMAS 48 HORAS - OFERTA ESPECIAL TERMINA EM BREVE!</span>
-                    <i class="fas fa-fire"></i>
-                </div>                
-                
-                <h1 class="hero-title">Nós analisamos o seu perfil e mostramos o que está te impedindo de crescer. </h1>
-                <p>Um olhar profissional pode transformar o jeito que as pessoas veem o seu Instagram.</p>
-                <!-- VSL Container -->
-                <div class="vsl-container">
-                    <div style="padding:56.25% 0 0 0;position:relative;">
-                        <iframe 
-                            id="youtube-player"
-                            width="100%" 
-                            height="100%"
-                            src="https://www.youtube.com/embed/qShSyRDDuio" 
-                            title="Bio Elite - Vídeo de Apresentação" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                        </iframe>
-                    </div>
+        <section class="hero" id="hero">
+            <div class="hero-content hero-grid">
+                <div class="hero-copy">
+                    <h1 class="hero-title">Atualize sua Bio do Instagram para o NOVO padrão profissional.</h1>
+                    <p class="hero-subtitle">Sua bio é o primeiro filtro que decide se alguém vai seguir você ou ir embora. Nós criamos uma Bio Elite: moderna, estratégica e alinhada às tendências visuais.</p>
+                    <a href="https://pay.cakto.com.br/3cu3d33" class="cta-button cta-blue">🔵 Quero minha Bio Elite</a>
                 </div>
-                
-                <div class="features">
-                    <div class="feature">
-                        <i class="fas fa-rocket"></i>
-                        <span>Análise gratuita</span>
+                <div class="hero-visual">
+                    <div class="hero-images">
+                        <div class="hero-image-container before">
+                            <div class="image-badge">
+                                <i class="fas fa-times-circle"></i> Antes
+                            </div>
+                            <img src="assets/imagens/PERSONAL_ANTES.png" alt="Perfil Antes" class="hero-image" loading="eager" />
+                        </div>
+                        <div class="hero-image-container after">
+                            <div class="image-badge">
+                                <i class="fas fa-check-circle"></i> Depois
+                            </div>
+                            <img src="assets/imagens/PERSONAL_DEPOIS.png" alt="Perfil Depois" class="hero-image" loading="eager" />
+                        </div>
                     </div>
-                    <div class="feature">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Bio certa. Resultados reias</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-money-bill-wave"></i>
-                        <span>Sua virada digital</span>
-                    </div>
+                    <p class="visual-note">Comparação real de perfil antes e depois da Bio Elite</p>
                 </div>
-                
-                <div class="social-proof">
-                    <div class="proof-item">
-                        <span class="number">+1.000</span>
-                        <span class="label">Clientes Satisfeitos</span>
-                    </div>
-                    <div class="proof-item">
-                        <span class="number">+%</span>
-                        <span class="label">Aumento Médio em Vendas</span>
-                    </div>
-                    <div class="proof-item">
-                        <span class="number">Em pouco tempo</span>
-                        <span class="label">Nós emplementamos</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Floating Elements -->
-            <div class="floating-elements">
-                <div class="floating-icon" style="--delay: 0s"><i class="fas fa-star"></i></div>
-                <div class="floating-icon" style="--delay: 1s"><i class="fas fa-heart"></i></div>
-                <div class="floating-icon" style="--delay: 2s"><i class="fas fa-thumbs-up"></i></div>
-                <div class="floating-icon" style="--delay: 3s"><i class="fas fa-fire"></i></div>
             </div>
         </section>
 
-        <!-- Before/After Section -->
+        <!-- Before/After Section (Atualizada: O que é a Bio Elite?) -->
         <section class="before-after">
-            <div class="section-header">
-                <h2>Veja a <span class="highlight">TRANSFORMAÇÃO REAL</span> de pessoas que estavam <span class="red-text">PERDENDO DINHEIRO</span> e agora <span class="highlight">FATURAM 5X MAIS</span></h2>
-                <p class="section-subtitle">Resultados reais de nossos clientes em menos de 7 dias</p>
+            <div class="section-header explain">
+                <h2>Muito mais que uma frase bonita — é estratégia, clareza e percepção profissional.</h2>
+                <p class="section-subtitle">A Bio Elite é uma atualização completa da sua identidade no Instagram. Nós criamos uma estrutura que:</p>
             </div>
-            
-            <div class="comparison-grid">
-                <div class="comparison-item before">
-                    <div class="comparison-header">
-                        <i class="fas fa-times-circle"></i>
-                        <h3>ANTES - Bio Amadora</h3>
-                    </div>
-                    <div class="before-after-image">
-                        <div class="placeholder-image">
-                            <div class="stats">
-                                <div class="stat negative">
-                                    <span class="number">2</span>
-                                    <span class="label">cliques/dia</span>
-                                </div>
-                                <div class="stat negative">
-                                    <span class="number">R$ 150</span>
-                                    <span class="label">vendas/mês</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-list">
-                        <div class="problem">❌ Bio confusa e sem foco</div>
-                        <div class="problem">❌ Zero autoridade</div>
-                        <div class="problem">❌ Ninguém clica nos links</div>
-                    </div>
+            <div class="what-grid">
+                <ul class="points-list">
+                    <li>comunica seu valor em 3 segundos</li>
+                    <li>moderniza a forma como seu perfil é percebido</li>
+                    <li>organiza sua proposta de maneira inteligente</li>
+                    <li>melhora a experiência de quem visita seu perfil</li>
+                    <li>acompanha o design global que perfis de referência estão usando hoje</li>
+                </ul>
+            </div>
+            <p class="disclaimer-note">Não é sobre prometer resultados irreais. É sobre elevar seu posicionamento — e o resto acontece naturalmente.</p>
+        </section>
+        <!-- Steps Section (Atualizada: Por que funciona?) -->
+        <section class="steps">
+            <h2>Porque as pessoas decidem em 1 segundo se continuam no seu perfil.</h2>
+            <div class="ux-cards">
+                <div class="ux-card">
+                    <div class="ux-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Clareza Imediata</h3>
+                    <p>Seus visitantes entendem exatamente quem você é e o que oferece.</p>
                 </div>
-                
-                <div class="vs-divider">
-                    <div class="vs-circle">VS</div>
-                    <div class="arrow">→</div>
+                <div class="ux-card">
+                    <div class="ux-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Visual Profissional</h3>
+                    <p>Sequência e estrutura inspiradas em padrões moderno.</p>
                 </div>
-                
-                <div class="comparison-item after">
-                    <div class="comparison-header">
-                        <i class="fas fa-check-circle"></i>
-                        <h3>DEPOIS - Bio Profissional</h3>
-                    </div>
-                    <div class="before-after-image">
-                        <div class="placeholder-image">
-                            <div class="stats">
-                                <div class="stat positive">
-                                    <span class="number">150+</span>
-                                    <span class="label">cliques/dia</span>
-                                </div>
-                                <div class="stat positive">
-                                    <span class="number">R$ 3.500</span>
-                                    <span class="label">vendas/mês</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefits-list">
-                        <div class="benefit">✅ Bio que vende sozinha</div>
-                        <div class="benefit">✅ Autoridade máxima</div>
-                        <div class="benefit">✅ Clientes disputando você</div>
-                    </div>
+                <div class="ux-card">
+                    <div class="ux-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Texto Essencial</h3>
+                    <p>Nada de frases vagas: comunicação direta, simples e inteligente.</p>
                 </div>
-                                                     
+                <div class="ux-card">
+                    <div class="ux-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Psicologia do Perfil</h3>
+                    <p>A bio molda a percepção de autoridade, confiança e profissionalismo.</p>
+                </div>
             </div>
         </section>
-        <!-- Steps Section -->
-        <section class="steps">
-            <h2>Esse é o novo formato que está todo mundo usando!</h2>
-            <div class="steps-grid">
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <h3>Usado por grandes perfis</h3>
-                    <p>Selecione o design perfeito para seu nicho</p>
+
+        <!-- Before/After Premium Section (Seção 4) -->
+        <section class="premium-before-after">
+            <div class="premium-header">
+                <h2>Veja a diferença que um perfil moderno faz.</h2>
+                <p class="premium-sub">Sem métricas falsas. Somente percepção visual. Isso é MUITO mais forte no padrão atual.</p>
+            </div>
+            <div class="premium-grid">
+                <div class="premium-card before">
+                    <div class="premium-badge">
+                        <i class="fas fa-times-circle"></i> Antes
+                    </div>
+                    <div class="premium-screen">
+                        <img src="assets/imagens/bio confusa.png" alt="Bio confusa (antes)" class="premium-img" loading="lazy" />
+                    </div>
+                    <p class="premium-text">Bio comum, confusa, longa</p>
                 </div>
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <h3>Mais cliques e vendas</h3>
-                    <p>Edite cores, textos e imagens facilmente</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <h3>Design moderno</h3>
-                    <p>Salve em alta qualidade e poste no Instagram</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">4</div>
-                    <h3>Pronto em pouco tempo</h3>
-                    <p>Acompanhe o aumento de cliques e vendas</p>
+                <div class="premium-card after">
+                    <div class="premium-badge">
+                        <i class="fas fa-check-circle"></i> Depois
+                    </div>
+                    <div class="premium-screen">
+                        <img src="assets/imagens/bio facil.png" alt="Bio Elite (depois)" class="premium-img" loading="lazy" />
+                    </div>
+                    <p class="premium-text">Bio Elite: clara, elegante, estratégica</p>
                 </div>
             </div>
-            <p class="time-highlight">Tudo isso feito por nós!</p>
         </section>
 
         <!-- VSL Middle Section -->
         <section class="vsl-middle">
             <div class="vsl-middle-content">
-                <h2>🎯 ATENÇÃO: Assista este vídeo até o final e descubra...</h2>
-                <h3>"O MÉTODO SECRETO que os GRANDES INFLUENCERS usam para converter BIO em DINHEIRO"</h3>
-                
+                <h2>Tudo que você recebe com a sua Bio Elite</h2>
+
                 <div class="vsl-container-middle">
                     <div class="vsl-placeholder-middle">
                         <div class="play-button" id="middle-play-btn">
                             <i class="fas fa-play"></i>
                         </div>
                         <div class="vsl-overlay">
-                            <p>🔥 REVELAÇÃO EXCLUSIVA: O que ninguém te conta sobre bio que vende</p>
-                            <div class="video-benefits">
-                                <span>✅ Método dos 7 elementos</span>
-                                <span>✅ Psicologia da conversão</span>
-                                <span>✅ Casos reais de sucesso</span>
-                            </div>
+                            <p>🎬 Assista: por que a Bio Elite eleva seu posicionamento</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="video-cta">
-                    <p class="cta-text">👆 <strong>ASSISTA AGORA</strong> e veja.... <span class="highlight">R$ 10.000+ por mês</span> apenas mudando a bio!</p>
+
+                <ul class="offer-list">
+                    <li>1 análise completa do seu perfil</li>
+                    <li>Criação da sua bio 100% personalizada</li>
+                    <li>Implementação no seu Instagram</li>                    
+                    <li>Suporte personalizado</li>
+                </ul>                           
+                   
+           
+        </section>      
+                     
+        
+        <!-- Testimonials Section (Seção 6 — Depoimentos reais) -->
+        <section class="testimonials">
+            <h2>O que nossos clientes dizem depois da Bio Elite</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="quote">“Meu perfil ficou MUITO mais bonito e profissional.”</p>
                 </div>
+                <div class="testimonial-card">
+                    <p class="quote">“Agora as pessoas entendem o que eu faço.”</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">“Minha bio ficou moderna, clara e elegante.”</p>
+                </div>
+            </div>            
+        </section>       
+                       
+        
+        <!-- Process Section (Seção 7 — Como funciona) -->
+        <section class="process">
+            <h2>Processo simples, rápido e totalmente personalizado</h2>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">1</div>
+                    <h3>Você envia o seu perfil</h3>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">2</div>
+                    <h3>Nós analisamos e criamos sua Bio Elite</h3>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">3</div>
+                    <h3>Implementamos tudo para você</h3>
+                </div>
+            </div>
+            <div class="process-image-container">
+                <img src="assets/imagens/BLOCO.png" alt="Bloco de informações" class="process-image">
+            </div>
+            <div class="process-cta">
+                <a href="https://pay.cakto.com.br/3cu3d33" class="cta-button cta-blue">🔵 Quero minha Bio Elite</a>
             </div>
         </section>
         
-        <!-- Packs Section -->
-        <section class="packs">
-            <div class="packs-header">
-                <h2>🚀 Veja o que você vai receber com nossa a <span class="highlight">Bio Personalizada</span></h2>
-                <p class="packs-subtitle">Cada modelo foi criado e testado por especialistas em conversão</p>
-            </div>
-            
-            <div class="packs-grid">
-                <div class="pack-item">                    
-                    <div class="pack-image">
-                        <div class="template-preview">🔥 MAIS PEDIDO</div>
-                        <div class="pack-stats">                            
-                        </div>
-                    </div>                    
-                    <p>👉 “Seja reconhecido como referência e conquiste respeito imediato.”</p>
-                </div>
-                
-                <div class="pack-item">                    
-                    <div class="pack-image">
-                        <div class="template-preview">💰 ALTA CONVERSÃO</div>
-                        <div class="pack-stats">                         
-                        </div>
-                    </div>                    
-                    <p>💰"Bio que vende enquanto você dorme"</p>
-                </div>
-                
-                <div class="pack-item">                    
-                    <div class="pack-image">
-                        <div class="template-preview">📈 TRENDING</div>
-                        <div class="pack-stats">                         
-                        </div>
-                    </div>                    
-                    <p>👉 “Siga as estratégias dos perfis que mais crescem e atraia seguidores reais.”</p>
-                </div>
-                
-                <div class="pack-item">                    
-                    <div class="pack-image">
-                        <div class="template-preview">👑 PREMIUM</div>
-                        <div class="pack-stats">                        
-                        </div>
+        <!-- Pricing Clean Section (Seção 8 — Valor e Garantia) -->
+        <section class="pricing-clean">
+            <div class="pricing-clean-inner">
+                <h2>Um investimento único para transformar a forma como as pessoas veem você.</h2>
+                <div class="price-box">
+                    <div class="price-main">
+                        <span class="currency">R$</span>
+                        <span class="amount">247</span>
+                        <span class="cents">,90</span>
                     </div>
-                    <p>👉 <h4>"Para quem quer cobrar mais e atrair clientes premium"</h4></div>                </div>
-            </div>
-            
-            <div class="packs-benefits">
-                <div class="benefit-item">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Funciona para <strong>QUALQUER NICHO</strong></span>
+                    <div class="price-note">Pagamento único. Sem mensalidades.</div>
+                    <div class="price-installments">ou 12x de R$ 28,82 no cartão</div>
                 </div>
-                <div class="benefit-item">
-                    <i class="fas fa-check-circle"></i>
-                    <span>100% editável no Canva</span>
+                <div class="guarantee-box">
+                    <p>Garantia real e ética: Ajustamos o projeto para garantir que o resultado final esteja alinhado ao que foi contratado. Sem complicação.</p>
+                    <ul class="guarantee-list">
+                        <li>Ajustes até o alinhamento com o que foi contratado</li>
+                        <li>Comunicação clara durante todo o processo</li>
+                        <li>Sem burocracia, tudo de forma simples</li>
+                    </ul>
                 </div>
-                <div class="benefit-item">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Pronto em <strong>pouco tempo</strong></span>
-                </div>
-                <div class="benefit-item">
-                    <i class="fas fa-check-circle"></i>
-                    <span><strong>Garantia de resultado</strong> ou dinheiro de volta</span>
-                </div>
+                <a href="https://pay.cakto.com.br/3cu3d33" class="cta-button cta-blue">🔵 Quero minha Bio Elite Agora 🚀</a>
             </div>
         </section>
-        
-        <!-- Bonuses Section -->
-        <section class="bonuses">
-            <h2>Ainda não acabou!</h2>
-            <p>Você também vai receber...</p>
-            <div class="bonus-list">
-                <div class="bonus-item">
-                    <i class="fas fa-gift"></i>
-                    <span>Call para análise de perfil gratuita</span>
-                </div>
-                <div class="bonus-item">
-                    <i class="fas fa-gift"></i>
-                    <span>Seu dominio.online</span>
-                </div>
-                <div class="bonus-item">
-                    <i class="fas fa-gift"></i>
-                    <span>Suporte exclusivo</span>
-                </div>
+
+        <!-- Final CTA Section (Seção 9 — CTA Final) -->
+        <section class="final-cta">
+            <div class="final-cta-inner">
+                <h2>Pronto para elevar seu nível no Instagram?</h2>
+                <p class="final-sub">Sua bio não é só um detalhe — é o seu primeiro impacto. Vamos te colocar no padrão certo.</p>
+                <a href="https://pay.cakto.com.br/3cu3d33" class="cta-button cta-blue">🔵 Criar minha Bio Elite</a>
             </div>
         </section>
-        
-        <!-- Target Audience -->
-        <section class="target">
-            <h2>O pack é para...</h2>
-            <div class="target-grid">
-                <div class="target-item">
-                    <i class="fas fa-tools"></i>
-                    <h4>Prestadores de serviço</h4>
-                </div>
-                <div class="target-item">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4>Infoprodutores</h4>
-                </div>
-                <div class="target-item">
-                    <i class="fas fa-star"></i>
-                    <h4>Influencers</h4>
-                </div>
-                <div class="target-item">
-                    <i class="fas fa-building"></i>
-                    <h4>Empresas</h4>
-                </div>
-            </div>
-            <p>... que queiram aumentar sua autoridade, serem mais reconhecidos, captarem mais clientes e faturarem mais através do Instagram.</p>
-        </section>
-        
-        <!-- Pricing Section -->
-        <section class="pricing">
-            <div class="pricing-header">
-                <h2>🎯 RECAPITULANDO: Tudo que você vai receber <span class="highlight">HOJE MESMO</span></h2>
-                <p class="pricing-subtitle">Um investimento que se paga em menos de 24 horas</p>
-            </div>
-            
-            <div class="value-breakdown">
-                <div class="value-item">
-                    <div class="value-icon">⭐</div>
-                    <div class="value-content">
-                        <h4>Elite bio</h4>
-                        <span class="value">R$ 247,90</span>
-                    </div>
-                </div>
-                
-                <div class="value-item">
-                    <div class="value-icon">🔍</div>
-                    <div class="value-content">
-                        <h4>Análise gratuita de perfil</h4>
-                        <span class="value">GRÁTIS</span>
-                    </div>
-                </div>
-                
-                <div class="value-item">
-                    <div class="value-icon">📞</div>
-                    <div class="value-content">
-                        <h4>Promoção de Assinatura mensal de suporte</h4>
-                        <span class="value">R$ 39,90</span>
-                    </div>
-                </div>
-                
-                <div class="total-value">
-                    <span class="total-label">VALOR TOTAL:</span>
-                    <span class="total-price">R$ 647,90</span>
-                </div>
-            </div>
-            
-            <div class="pricing-box">
-                <div class="discount-banner">
-                    <span>🔥 OFERTA ESPECIAL - ÚLTIMAS 48 HORAS</span>
-                </div>
-                
-                <div class="original-price">
-                    <span class="price-label">De R$ 647,90 por apenas...</span>
-                </div>
-                
-                <div class="current-price">
-                    <span class="new-price">R$ 247,90</span>
-                    <span class="installments">ou 12x de R$ 28,82</span>
-                </div>
-                
-                <div class="savings">
-                    <span class="savings-text">Você economiza R$ 400,00 (61,7% OFF)</span>
-                </div>
-                
-                <div class="urgency-timer">
-                    <div class="timer-text">⏰ Oferta expira em:</div>
-                    <div class="timer" id="countdown-timer">
-                        <div class="time-unit">
-                            <span class="time-number" id="hours">23</span>
-                            <span class="time-label">horas</span>
-                        </div>
-                        <div class="time-unit">
-                            <span class="time-number" id="minutes">47</span>
-                            <span class="time-label">min</span>
-                        </div>
-                        <div class="time-unit">
-                            <span class="time-number" id="seconds">32</span>
-                            <span class="time-label">seg</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <a href="https://pay.cakto.com.br/3cu3d33" class="cta-button pulse-animation" id="main-cta">
-                    <span class="cta-text">🚀 SIM! EU QUERO TRIPLICAR MINHAS VENDAS</span>
-                    <span class="cta-subtext">Garantia de 30 dias</span>
-                </a>
-                
-                <div class="guarantees">
-                    <div class="guarantee">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Garantia de 7 dias</span>
-                    </div>
-                    <div class="guarantee">
-                        <i class="fas fa-lock"></i>
-                        <span>Pagamento 100% seguro</span>
-                    </div>
-                    <div class="guarantee">
-                        <i class="fas fa-download"></i>                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Choice Section -->
-        <section class="choice">
-            <h2>Agora você tem duas opções:</h2>
-            <div class="choice-grid">
-                <div class="choice-item negative">
-                    <h4>Opção 1</h4>
-                    <p>Continuar com o formato antigo e perder vendas</p>
-                </div>
-                <div class="choice-item positive">
-                    <h4>Opção 2</h4>
-                    <p>Atualizar agora e aumentar seus resultados</p>
-                </div>
-            </div>
-            <p class="choice-question">É com você. Qual você escolhe?</p>
-        </section>
-        
-        <!-- About Criart Section -->
-        <section class="about-criart + Conex.Se">
-            <div class="criart-header">
-                <div class="criart-logo">
-                    <h2>🎨 <span class="criart-brand">Criart+Conex.Se</span> - Sua Parceira de Sucesso Digital</h2>
-                    <p class="criart-tagline">A agência que transformou +1.000 negócios em máquinas de vendas online</p>
-                </div>
-            </div>
-            
-            <div class="criart-content">
-                <div class="criart-story">
-                    <h3>🏆 Por que escolher a CRIART+Conex.Se para seu projeto?</h3>
-                    <p>Não somos apenas mais uma agência. Somos <strong>ESPECIALISTAS EM CONVERSÃO</strong> que vivem e respiram resultados. Cada template, cada palavra, cada pixel foi pensado para uma coisa: <span class="highlight">FAZER VOCÊ VENDER MAIS!</span></p>
-                </div>
-                
-                <div class="criart-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">+900</div>
-                        <div class="stat-label">Clientes Atendidos</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">3 x +</div>
-                        <div class="stat-label">No aumento Médio em Vendas</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">98%</div>
-                        <div class="stat-label">Taxa de Satisfação</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24h</div>
-                        <div class="stat-label">Suporte Ativo</div>
-                    </div>
-                </div>
-                
-                <div class="criart-expertise">
-                    <h3>🎯 Nossa Expertise Exclusiva:</h3>
-                    <div class="expertise-grid">
-                        <div class="expertise-item">
-                            <i class="fas fa-brain"></i>
-                            <h4>Psicologia da Conversão</h4>
-                            <p>Dominamos os gatilhos mentais que fazem pessoas comprarem. Cada elemento é estratégico.</p>
-                        </div>
-                        <div class="expertise-item">
-                            <i class="fas fa-chart-line"></i>
-                            <h4>Growth Hacking</h4>
-                            <p>Técnicas avançadas de crescimento que grandes empresas usam, adaptadas para seu negócio.</p>
-                        </div>
-                        <div class="expertise-item">
-                            <i class="fas fa-palette"></i>
-                            <h4>Design que Converte</h4>
-                            <p>Não fazemos "bonito". Fazemos designs que geram resultados e aumentam vendas.</p>
-                        </div>
-                        <div class="expertise-item">
-                            <i class="fas fa-rocket"></i>
-                            <h4>Implementação Rápida</h4>
-                            <p>Seus templates ficam prontos em minutos. Sem complicação, sem demora.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="criart-testimonials">
-                    <h3>💬 O que nossos clientes falam:</h3>
-                    <div class="testimonials-grid">
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <p>"A CRIART não entregou apenas templates. Entregou uma TRANSFORMAÇÃO completa no meu negócio. Em 30 dias, tripliquei meu faturamento!"</p>
-                            </div>
-                            <div class="testimonial-author">
-                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23e74c3c'/%3E%3Ctext x='25' y='32' text-anchor='middle' fill='white' font-size='18'%3EJ%3C/text%3E%3C/svg%3E" alt="João">
-                                <div>
-                                    <span class="author-name">João Silva</span>
-                                    <span class="author-business">Coach de Vendas</span>
-                                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <p>"Profissionalismo TOTAL! A equipe da CRIART entende de conversão como ninguém. Meu Instagram virou uma máquina de leads!"</p>
-                            </div>
-                            <div class="testimonial-author">
-                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%2300b894'/%3E%3Ctext x='25' y='32' text-anchor='middle' fill='white' font-size='18'%3EA%3C/text%3E%3C/svg%3E" alt="Ana">
-                                <div>
-                                    <span class="author-name">Ana Costa</span>
-                                    <span class="author-business">Consultora Digital</span>
-                                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <p>"Trabalho com várias agências, mas a CRIART é DIFERENTE. Eles realmente se importam com o MEU resultado. Parceria para a vida!"</p>
-                            </div>
-                            <div class="testimonial-author">
-                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23667eea'/%3E%3Ctext x='25' y='32' text-anchor='middle' fill='white' font-size='18'%3ER%3C/text%3E%3C/svg%3E" alt="Roberto">
-                                <div>
-                                    <span class="author-name">Roberto Lima</span>
-                                    <span class="author-business">E-commerce</span>
-                                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="criart-guarantee">
-                    <div class="guarantee-content">
-                        <h3>🛡️ Nossa Garantia CRIART & CONEX.Se de Resultados:</h3>
-                        <div class="guarantee-points">
-                            <div class="guarantee-point">
-                                <i class="fas fa-check-circle"></i>
-                                <span><strong>Assinatura mensal suporte VIP 24/7:</strong> Nossa equipe está sempre disponível para você</span>
-                            </div>
-                            <div class="guarantee-point">
-                                <i class="fas fa-check-circle"></i>
-                                <span><strong>Atualizações</strong> Novos templates toda semana</span>
-                            </div>
-                            <div class="guarantee-point">
-                                <i class="fas fa-check-circle"></i>
-                                <span><strong>Consultoria Inclusa:</strong> Análise gratuita da sua estratégia atual</span>
-                            </div>
-                            <div class="guarantee-point">
-                                <i class="fas fa-check-circle"></i>
-                                <span><strong>Garantia de 30 dias:</strong> Não ficou satisfeito? Devolvemos 100% do valor</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="criart-cta">
-                    <h3>🚀 Pronto para trabalhar com os MELHORES?</h3>
-                    <p>Junte-se aos +5.000 empreendedores que escolheram a CRIART e transformaram seus negócios em máquinas de vendas!</p>
-                    <a href="https://pay.cakto.com.br/3cu3d33" class="cta-button criart-special" id="criart-cta">
-                        <span class="cta-text">✨ SIM! QUERO A CRIART & Conex.Se COMO PARCEIRA</span>
-                        <span class="cta-subtext">Acesso VIP + Suporte Exclusivo + Garantia Estendida</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        
+
         <!-- FAQ Section -->
         <section class="faq">
             <div class="faq-item">
-                <h4>Qual é a forma de pagamento?</h4>
                 <p>Você pode fazer o pagamento pelo pix ou cartão de crédito.</p>
             </div>
             <div class="faq-item">
@@ -604,6 +265,7 @@
         </footer>
     </div>
 
+    <script src="js/parallax.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
