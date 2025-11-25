@@ -54,6 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
+
+                // Disparar animação dos cards de pontos quando a seção "before-after" entrar na tela
+                if (entry.target.classList.contains('before-after')) {
+                    entry.target.classList.add('points-animate');
+                }
             }
         });
     }, observerOptions);
