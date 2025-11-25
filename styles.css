@@ -1976,6 +1976,26 @@ body::before {
     margin: 0 auto 40px;
 }
 
+.vsl-video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* vídeo maior e em destaque */
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.vsl-video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 .vsl-placeholder-middle {
     width: 100%;
     height: 500px;
